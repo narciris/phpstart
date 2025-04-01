@@ -10,11 +10,14 @@
     <title>Document</title>
 </head>
 <body>
+
 <div class="d-flex justify-content-center align-items-center vh-100">
+
     <div class="card p-4" style="max-width: 400px; width: 100%;">
         <h2 class="text-center mb-4">Operaciones Matemáticas</h2>
-    
+
     <form action="proceso.php" method="post" class="form-inline">
+        <a href="file.php" class="btn btn-success">Subir Archivos</a>
 <div class="mb-3">
     <label for="option" class="form-label"> Escoge una operacion</label>
 
@@ -50,8 +53,9 @@
     </form>
 
 </div>
+
 </div>
-     <a href="file.php" class="btn btn-success">Subir Archivos</a>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
