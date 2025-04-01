@@ -10,20 +10,48 @@
     <title>Document</title>
 </head>
 <body>
-<div class="justify-content-center">
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4" style="max-width: 400px; width: 100%;">
+        <h2 class="text-center mb-4">Operaciones Matemáticas</h2>
     
-    <form action="proces.php" method="post">
-        <label for="numero1"></label>
-        <input  name= "numero1" type="number">
+    <form action="proceso.php" method="post" class="form-inline">
+<div class="mb-3">
+    <label for="option" class="form-label"> Escoge una operacion</label>
 
-        <label for="numero2"></label>
-        <input type="number" name="numero2">
+    <select name="option" class="form-select">
 
-        <button type="submit" class="btn btn-success">Operar</button>
+        <option value="sum" name="sum">
+            Sumar
+        </option>
+
+        <option value="rest" name="rest">
+            Restar
+        </option>
+
+        <option  value="div" name="division">
+            División
+        </option>
+    </select>
+</div>
+
+       <div class=" mb-3">
+           <label for="numero1" class="form-label"></label>
+           <input  name= "numero1" type="number" class="form-control">
+       </div>
+        <div class="mb-3">
+            <label for="numero2" class="form-label"></label>
+            <input type="number" name="numero2" class="form-control">
+        </div>
+
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-dark">Operar</button>
+
+        </div>
     </form>
 
 </div>
-    
+</div>
+     <a href="file.php" class="btn btn-success">Subir Archivos</a>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
